@@ -476,7 +476,7 @@ nav a{
         background-image: url(../imagenes/imagen3.jpg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size:contain;
+        background-size: contain;
         height: 300px;
         margin: 10px;
     }
