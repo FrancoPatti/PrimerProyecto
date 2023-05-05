@@ -1,0 +1,97 @@
+/* MIXINS */
+/* Mixins sin parametros */
+@mixin arguImgMainMix{
+    grid-area: mainImg;
+    display: grid;
+    background-image: url(../imagenes/imagen13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@mixin arguTextMainMix{
+    grid-area: main;
+    margin: 10px;
+}
+@mixin arguImgSectionMix{
+    grid-area: sectionImg;
+    display: grid;
+    background-image: url(../imagenes/imagen11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@mixin arguSectionMix{
+    grid-area: section;
+    margin: 10px;
+}
+
+.contenedorTotalA{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1.5fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "header header"
+    "main mainImg"
+    "section sectionImg"
+    "correo correo"
+    "footer footer"
+}
+.arguImgMain{
+    @include arguImgMainMix;
+    background-size:cover;
+    width: 500px;
+    height: 300px;
+    margin: 30px 10px;
+}
+.arguTextMain{
+    @include arguTextMainMix;
+}
+.arguImgSection{
+    @include arguImgSectionMix;
+    background-size:cover;
+    width: 500px;
+    height: 300px;
+    margin: 30px 10px;
+}
+.arguSection{
+    @include arguSectionMix;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 425px){
+    
+    .contenedorTotalA{
+        display: grid;
+        font-size: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.8fr 0.3fr 0.7fr 0.2fr;
+        grid-template-areas: 
+        "header "
+        "main"
+        "mainImg"
+        "section"
+        "sectionImg"
+        "correo"
+        "footer"
+    }
+    
+    .arguImgMain{
+        @include arguImgMainMix;
+        background-size:contain;
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+    }
+    .arguTextMain{
+        @include arguTextMainMix;
+    }
+    .arguImgSection{
+        @include arguImgSectionMix;
+        background-size:contain;
+        width: 400px;
+        height: 250px;
+        margin: 10px;
+    }
+    .arguSection{
+        @include arguSectionMix;
+    }
+}

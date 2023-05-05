@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: $colorPincipal;
+    color: $colorLetras;
+}
+
+/* MIXINS */
+/* Mixins sin parametros */
+@mixin gridPadding{
+    display: grid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+}
+@mixin headMix{
+    grid-area: header;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: $colorSecundario;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+@mixin menuMix{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+@mixin logoMix{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+}
+@mixin correoMix{
+    grid-area: correo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+@mixin socialMix{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedorTotal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.3fr 1fr 2fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "section section"
+    "correo correo"
+    "footer footer"
+}
+.logo{
+    @include logoMix;
+}
+.header{
+    @include headMix;
+    padding: 10px 40px;
+}
+.logoImg{
+    height: 50px;
+    margin-right: 10px;
+}
+.menu{
+    @include menuMix;
+}
+
+a{
+    text-decoration: none;
+    color: $colorLetras;
+    padding: 7px;
+    margin: 2px;
+}
+nav a{
+    display: flex;
+    font-weight: 500;
+    padding-right: 10px;
+    border-color: $colorBordeBotones;
+    border-style: solid;
+    background-color: $colorBotones;
+}
+
+.main{
+    grid-area: main;
+    @include gridPadding;
+    background-image: url(../imagenes/encabezado.jpg);
+    height: 300px;
+    align-items: end;
+    color: $colorPincipal;
+    margin: 10px;
+}
+.section{
+    grid-area: section;
+    @include gridPadding;
+    background-image: url(../imagenes/imagen9.jpg);
+    height: 600px;
+    align-items: center;
+    color: $colorPincipal;
+    margin: 40px;
+}
+.correo{
+    @include correoMix;
+}
+.footer{
+    grid-area: footer;
+    background-color: $colorSecundario;
+}
+.social{
+    @include socialMix;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 425px){
+
+    .contenedorTotal{
+        display: grid;
+        font-size: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.3fr 0.2fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "section"
+        "correo"
+        "footer"
+    }
+    .logo{
+        @include logoMix;
+    }
+    .tituloPrincipal{
+        display: none;
+    }
+    .header{
+        @include headMix;
+        padding: 10px 10px;
+        flex-direction: column;
+    }
+    .logoImg{
+        height: 30px;
+        margin-right: 5px;
+    }
+    .menu{
+        @include menuMix;
+    }
+
+    a{
+        text-decoration: none;
+        color: $colorLetras;
+        padding: 2px;
+        margin: 1px;
+    }
+    nav a{
+        display: flex;
+        padding-right: 1px;
+        border-color: $colorBordeBotones;
+        border-style: solid;
+        background-color: $colorBotones;
+    }
+
+    .main{
+        grid-area: main;
+        @include gridPadding;
+        background-image: url(../imagenes/encabezado.jpg);
+        height: 300px;
+        align-items: end;
+        color: $colorPincipal;
+        margin: 10px;
+    }
+    .section{
+        grid-area: section;
+        @include gridPadding;
+        background-image: url(../imagenes/imagen9.jpg);
+        height: 600px;
+        align-items: center;
+        color: $colorPincipal;
+        margin: 10px 20px;
+    }
+    .correo{
+        @include correoMix;
+    }
+    .footer{
+        grid-area: footer;
+    }
+    .social{
+        @include socialMix;
+    }
+}
