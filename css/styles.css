@@ -228,7 +228,7 @@ nav a {
 .contenedorTotalC {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.3fr 1fr 1.5fr 2fr 0.2fr;
+  grid-template-rows: 0.3fr 1fr 2fr 2fr 0.2fr;
   grid-template-areas: "header header" "main main" "section section" "article article" "footer footer";
 }
 
@@ -245,7 +245,6 @@ nav a {
 
 .contactoSec {
   grid-area: section;
-  margin: 10px;
 }
 
 .imagenArticle {
@@ -257,6 +256,19 @@ nav a {
   background-size: cover;
   height: 600px;
   margin: 50px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5ebe0;
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: auto;
+  width: 400px;
+  height: 500px;
 }
 
 .footer {
@@ -284,7 +296,6 @@ nav a {
   }
   .contactoSec {
     grid-area: section;
-    margin: 10px;
   }
   .imagenArticle {
     grid-area: article;
@@ -295,6 +306,18 @@ nav a {
     background-size: contain;
     height: 300px;
     margin: 10px;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f5ebe0;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
   }
   .footer {
     grid-area: footer;

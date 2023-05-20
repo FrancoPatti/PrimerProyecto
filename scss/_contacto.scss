@@ -11,7 +11,7 @@
 }
 @mixin contactMix{
     grid-area: section;
-    margin: 10px;
+
 }
 @mixin imgArtMix{
     grid-area: article;
@@ -20,11 +20,23 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+@mixin formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $colorBotones;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+}
 
 .contenedorTotalC{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.3fr 1fr 1.5fr 2fr 0.2fr;
+    grid-template-rows: 0.3fr 1fr 2fr 2fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -44,6 +56,9 @@
     background-size:cover;
     height: 600px;
     margin: 50px;
+}
+.formulario{
+    @include formulario;
 }
 .footer{
     grid-area: footer;
@@ -77,6 +92,9 @@
         background-size:contain;
         height: 300px;
         margin: 10px;
+    }
+    .formulario{
+        @include formulario;
     }
     .footer{
         grid-area: footer;
