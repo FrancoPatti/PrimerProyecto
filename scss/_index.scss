@@ -5,7 +5,7 @@
 }
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: $colorPincipal;
+    background-image: url(../imagenes/DarkFondo2.avif);
     color: $colorLetras;
 }
 
@@ -22,9 +22,11 @@ body{
 @mixin headMix{
     grid-area: header;
     display: flex;
-    height: 80px;
+    height: 100px;
     width: 100%;
-    background-color: $colorSecundario;
+    background-image: url(../imagenes/MenuImg.jpg);
+    background-position: top;
+    background-size: cover;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -62,7 +64,7 @@ body{
 .contenedorTotal{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.3fr 1fr 2fr 0.5fr 0.2fr;
+    grid-template-rows: 0.3fr 1.2fr 1.3fr 0.5fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -94,20 +96,18 @@ a{
 nav a{
     display: flex;
     font-weight: 500;
-    padding-right: 10px;
-    border-color: $colorBordeBotones;
-    border-style: solid;
-    background-color: $colorBotones;
+    padding-right: 15px;
 }
 
 .main{
     grid-area: main;
     @include gridPadding;
     background-image: url(../imagenes/encabezado.jpg);
-    height: 300px;
+    height: 580px;
     align-items: end;
     color: $colorPincipal;
-    margin: 10px;
+    margin: auto;
+    font-size: large;
 }
 .section{
     grid-area: section;
@@ -116,14 +116,16 @@ nav a{
     height: 600px;
     align-items: center;
     color: $colorPincipal;
-    margin: 40px;
+    margin: auto;
+    font-size: large;
 }
 .correo{
     @include correoMix;
 }
 .footer{
     grid-area: footer;
-    background-color: $colorSecundario;
+    background-image: url(../imagenes/MenuImg.jpg);
+    background-position: top;
 }
 .social{
     @include socialMix;
@@ -153,8 +155,8 @@ nav a{
     }
     .header{
         @include headMix;
-        padding: 10px 10px;
         flex-direction: column;
+        height: 90px;
     }
     .logoImg{
         height: 30px;
@@ -168,14 +170,10 @@ nav a{
         text-decoration: none;
         color: $colorLetras;
         padding: 2px;
-        margin: 1px;
     }
     nav a{
         display: flex;
-        padding-right: 1px;
-        border-color: $colorBordeBotones;
-        border-style: solid;
-        background-color: $colorBotones;
+        padding-right: 2px;
     }
 
     .main{
@@ -183,9 +181,8 @@ nav a{
         @include gridPadding;
         background-image: url(../imagenes/encabezado.jpg);
         height: 300px;
-        align-items: end;
+        align-items: center;
         color: $colorPincipal;
-        margin: 10px;
     }
     .section{
         grid-area: section;
@@ -194,7 +191,6 @@ nav a{
         height: 600px;
         align-items: center;
         color: $colorPincipal;
-        margin: 10px 20px;
     }
     .correo{
         @include correoMix;

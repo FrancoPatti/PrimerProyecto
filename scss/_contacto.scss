@@ -11,7 +11,7 @@
 }
 @mixin contactMix{
     grid-area: section;
-
+    text-align: center;
 }
 @mixin imgArtMix{
     grid-area: article;
@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: $colorBotones;
     text-align: center;
     justify-content: space-between;
     padding: 10px;
