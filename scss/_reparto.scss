@@ -5,6 +5,8 @@
     display: grid;
     background-image: url(../imagenes/imagen3.jpg);
     background-repeat: no-repeat;
+    background-position: top;
+    background-size:cover;
 }
 @mixin repartSecMix{
     grid-area: section;
@@ -23,6 +25,8 @@
     display: grid;
     background-image: url(../imagenes/imagen5.jpg);
     background-repeat: no-repeat;
+    background-position: top;
+    background-size:cover;
 }
 
 .contenedorTotalR{
@@ -40,9 +44,6 @@
 
 .repartoMain{
     @include repartMainMix;
-    background-position: top;
-    background-size:cover;
-    margin: 50px;
 }
 .repartoSection{
     @include repartSecMix;
@@ -52,9 +53,6 @@
 }
 .repartoImgArticle{
     @include repartImgMix;
-    background-position: top;
-    background-size:cover;
-    margin: 50px;
 }
 
 /* Media queries */

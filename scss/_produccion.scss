@@ -40,7 +40,7 @@
 .contenedorTotalP{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 0.2fr 2fr 1.2fr 1.5fr 1.5fr 0.5fr 0.2fr;
+    grid-template-rows: 0.2fr 2fr 1.2fr 1.5fr 1.3fr 0.6fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -53,7 +53,6 @@
 
 .produccionImgMain{
     @include produccionImgMainMix;
-    margin: 50px;
 }
 .sectionText{
     @include sectionTextMix;

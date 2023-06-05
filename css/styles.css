@@ -44,6 +44,7 @@ body {
 .logoImg {
   height: 50px;
   margin-right: 10px;
+  border-radius: 50%;
 }
 
 .menu {
@@ -226,7 +227,7 @@ nav a {
 .contenedorTotalC {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.3fr 1fr 2fr 2fr 0.2fr;
+  grid-template-rows: 0.4fr 0.9fr 2fr 2fr 0.2fr;
   grid-template-areas: "header header" "main main" "section section" "article article" "footer footer";
 }
 
@@ -237,13 +238,41 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 10px;
   height: 200px;
 }
 
 .contactoSec {
   grid-area: section;
+  width: 400px;
+  height: 400px;
+  background-image: url(../imagenes/darkFondo.jpg);
+  padding: 30px;
+  margin: auto;
+  border-radius: 4px;
   text-align: center;
+}
+
+.contactoSec h4 {
+  padding-bottom: 20px;
+}
+
+.controles {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid;
+  color: white;
+}
+
+.boton2 {
+  width: 100%;
+  background-color: rgb(165, 4, 4);
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  color: white;
 }
 
 .imagenArticle {
@@ -254,19 +283,6 @@ nav a {
   background-position: center;
   background-size: cover;
   height: 600px;
-  margin: 50px;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  justify-content: space-between;
-  padding: 10px;
-  margin: auto;
-  width: 400px;
-  height: 500px;
 }
 
 .footer {
@@ -289,11 +305,16 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 10px;
     height: 80px;
   }
   .contactoSec {
     grid-area: section;
+    width: 400px;
+    height: 400px;
+    background-image: url(../imagenes/darkFondo.jpg);
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
     text-align: center;
   }
   .imagenArticle {
@@ -305,17 +326,6 @@ nav a {
     background-size: contain;
     height: 300px;
     margin: 10px;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin: auto;
-    width: 400px;
-    height: 500px;
   }
   .footer {
     grid-area: footer;
@@ -337,7 +347,6 @@ nav a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  margin: 50px;
 }
 
 .repartoSection {
@@ -361,7 +370,6 @@ nav a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  margin: 50px;
 }
 
 /* Media queries */
@@ -378,6 +386,8 @@ nav a {
     display: grid;
     background-image: url(../imagenes/imagen3.jpg);
     background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     background-position: center;
     background-size: contain;
     height: 300px;
@@ -400,6 +410,8 @@ nav a {
     display: grid;
     background-image: url(../imagenes/imagen5.jpg);
     background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     background-position: center;
     background-size: contain;
     height: 300px;
@@ -411,7 +423,7 @@ nav a {
 .contenedorTotalA {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1.5fr 0.5fr 0.2fr;
+  grid-template-rows: 0.3fr 1fr 1.5fr 0.5fr 0.2fr;
   grid-template-areas: "header header" "main mainImg" "section sectionImg" "correo correo" "footer footer";
 }
 
@@ -455,7 +467,7 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.8fr 0.3fr 0.7fr 0.2fr;
+    grid-template-rows: 0.2fr 0.8fr 0.3fr 0.7fr 0.1fr;
     grid-template-areas: "header " "main" "mainImg" "section" "sectionImg" "correo" "footer";
   }
   .arguImgMain {
@@ -494,7 +506,7 @@ nav a {
 .contenedorTotalP {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 0.2fr 2fr 1.2fr 1.5fr 1.5fr 0.5fr 0.2fr;
+  grid-template-rows: 0.2fr 2fr 1.2fr 1.5fr 1.3fr 0.6fr 0.2fr;
   grid-template-areas: "header header" "main main" "section section" "article articleImg" "article2 articleImg2" "correo correo" "footer footer";
 }
 
@@ -505,7 +517,6 @@ nav a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 50px;
 }
 
 .sectionText {

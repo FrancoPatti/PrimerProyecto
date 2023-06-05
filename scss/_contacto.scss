@@ -7,10 +7,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 10px;
 }
 @mixin contactMix{
     grid-area: section;
+    width: 400px;
+    height: 400px;
+    background-image: url(../imagenes/darkFondo.jpg);
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
     text-align: center;
 }
 @mixin imgArtMix{
@@ -20,22 +25,11 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-@mixin formulario{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin: auto;
-    width: 400px;
-    height: 500px;
-}
 
 .contenedorTotalC{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.3fr 1fr 2fr 2fr 0.2fr;
+    grid-template-rows: 0.4fr 0.9fr 2fr 2fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -50,14 +44,31 @@
 .contactoSec{
     @include contactMix;
 }
+.contactoSec h4{
+    padding-bottom: 20px
+}
+.controles{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid;
+    color: $colorLetras;
+}
+.boton2{
+    width: 100%;
+    background-color: rgb(165, 4, 4);
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    color: $colorLetras;
+
+}
 .imagenArticle{
     @include imgArtMix;
     background-size:cover;
     height: 600px;
-    margin: 50px;
-}
-.formulario{
-    @include formulario;
 }
 .footer{
     grid-area: footer;
@@ -91,9 +102,6 @@
         background-size:contain;
         height: 300px;
         margin: 10px;
-    }
-    .formulario{
-        @include formulario;
     }
     .footer{
         grid-area: footer;
