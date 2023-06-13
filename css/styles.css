@@ -93,8 +93,9 @@ nav a {
   text-align: center;
   padding: 20px;
   background-image: url(../imagenes/imagen9.jpg);
+  opacity: 4;
   height: 600px;
-  align-items: center;
+  align-items: end;
   color: url(../imagenes/DarkFondo2.avif);
   margin: auto;
   font-size: large;
@@ -104,10 +105,29 @@ nav a {
   grid-area: correo;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 10px;
   text-align: center;
+}
+
+.correoRegistro {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border: 1px solid;
+  color: white;
+}
+
+.suscribeBoton {
+  width: 50%;
+  background-color: rgb(165, 4, 4);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 16px;
+  color: white;
 }
 
 .footer {
@@ -206,7 +226,6 @@ nav a {
     grid-area: correo;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 10px;
     text-align: center;

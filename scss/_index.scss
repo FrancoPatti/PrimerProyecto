@@ -48,7 +48,6 @@ body{
     grid-area: correo;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 10px;
     text-align: center;
@@ -114,14 +113,33 @@ nav a{
     grid-area: section;
     @include gridPadding;
     background-image: url(../imagenes/imagen9.jpg);
+    opacity: 4;
     height: 600px;
-    align-items: center;
+    align-items: end;
     color: $colorPincipal;
     margin: auto;
     font-size: large;
 }
 .correo{
     @include correoMix;
+}
+.correoRegistro{
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    margin-top: 16px;
+    border-radius: 4px;
+    border: 1px solid;
+    color: $colorLetras;
+}
+.suscribeBoton{
+    width: 50%;
+    background-color: rgb(165, 4, 4);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 16px;
+    color: $colorLetras;
 }
 .footer{
     grid-area: footer;
