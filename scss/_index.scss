@@ -102,7 +102,7 @@ nav a{
 .main{
     grid-area: main;
     @include gridPadding;
-    background-image: url(../imagenes/encabezado.jpg);
+    background-image: url(../imagenes/475264.jpg);
     height: 580px;
     align-items: end;
     color: $colorPincipal;
@@ -112,10 +112,10 @@ nav a{
 .section{
     grid-area: section;
     @include gridPadding;
-    background-image: url(../imagenes/imagen9.jpg);
-    opacity: 4;
+    background-image: url(../imagenes/1260061.jpg);
+    opacity: 2;
     height: 600px;
-    align-items: end;
+    align-items: center;
     color: $colorPincipal;
     margin: auto;
     font-size: large;

@@ -76,7 +76,7 @@ nav a {
   background-size: cover;
   text-align: center;
   padding: 20px;
-  background-image: url(../imagenes/encabezado.jpg);
+  background-image: url(../imagenes/475264.jpg);
   height: 580px;
   align-items: end;
   color: url(../imagenes/DarkFondo2.avif);
@@ -92,10 +92,10 @@ nav a {
   background-size: cover;
   text-align: center;
   padding: 20px;
-  background-image: url(../imagenes/imagen9.jpg);
-  opacity: 4;
+  background-image: url(../imagenes/1260061.jpg);
+  opacity: 2;
   height: 600px;
-  align-items: end;
+  align-items: center;
   color: url(../imagenes/DarkFondo2.avif);
   margin: auto;
   font-size: large;
@@ -246,18 +246,17 @@ nav a {
 .contenedorTotalC {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.4fr 0.9fr 2fr 2fr 0.2fr;
+  grid-template-rows: 0.4fr 1fr 2fr 2fr 0.2fr;
   grid-template-areas: "header header" "main main" "section section" "article article" "footer footer";
 }
 
 .imagenMain {
   grid-area: main;
   display: grid;
-  background-image: url(../imagenes/imagen10.webp);
-  background-repeat: no-repeat;
+  background-image: url(../imagenes/1294177.jpg);
   background-position: center;
   background-size: cover;
-  height: 200px;
+  height: 300px;
 }
 
 .contactoSec {
@@ -297,7 +296,7 @@ nav a {
 .imagenArticle {
   grid-area: article;
   display: grid;
-  background-image: url(../imagenes/imagen12.avif);
+  background-image: url(../imagenes/398715.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -320,8 +319,7 @@ nav a {
   .imagenMain {
     grid-area: main;
     display: grid;
-    background-image: url(../imagenes/imagen10.webp);
-    background-repeat: no-repeat;
+    background-image: url(../imagenes/1294177.jpg);
     background-position: center;
     background-size: cover;
     height: 80px;
@@ -339,7 +337,7 @@ nav a {
   .imagenArticle {
     grid-area: article;
     display: grid;
-    background-image: url(../imagenes/imagen12.avif);
+    background-image: url(../imagenes/398715.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -362,7 +360,7 @@ nav a {
 .repartoMain {
   grid-area: main;
   display: grid;
-  background-image: url(../imagenes/imagen3.jpg);
+  background-image: url(../imagenes/586282.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -385,9 +383,9 @@ nav a {
 .repartoImgArticle {
   grid-area: article2;
   display: grid;
-  background-image: url(../imagenes/imagen5.jpg);
+  background-image: url(../imagenes/403408.jpg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: cover;
 }
 
@@ -403,7 +401,7 @@ nav a {
   .repartoMain {
     grid-area: main;
     display: grid;
-    background-image: url(../imagenes/imagen3.jpg);
+    background-image: url(../imagenes/586282.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -427,9 +425,9 @@ nav a {
   .repartoImgArticle {
     grid-area: article2;
     display: grid;
-    background-image: url(../imagenes/imagen5.jpg);
+    background-image: url(../imagenes/403408.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-position: center;
     background-size: contain;
@@ -532,7 +530,7 @@ nav a {
 .produccionImgMain {
   grid-area: main;
   display: grid;
-  background-image: url(../imagenes/imagen6.jpg);
+  background-image: url(../imagenes/516547.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -589,7 +587,7 @@ nav a {
   .produccionImgMain {
     grid-area: main;
     display: grid;
-    background-image: url(../imagenes/imagen6.jpg);
+    background-image: url(../imagenes/516547.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

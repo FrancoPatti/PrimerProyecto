@@ -3,8 +3,7 @@
 @mixin imgMainMix{
     grid-area: main;
     display: grid;
-    background-image: url(../imagenes/imagen10.webp);
-    background-repeat: no-repeat;
+    background-image: url(../imagenes/1294177.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -21,7 +20,7 @@
 @mixin imgArtMix{
     grid-area: article;
     display: grid;
-    background-image: url(../imagenes/imagen12.avif);
+    background-image: url(../imagenes/398715.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -29,7 +28,7 @@
 .contenedorTotalC{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.4fr 0.9fr 2fr 2fr 0.2fr;
+    grid-template-rows: 0.4fr 1fr 2fr 2fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -39,7 +38,7 @@
 }
 .imagenMain{
     @include imgMainMix;
-    height: 200px;
+    height: 300px;
 }
 .contactoSec{
     @include contactMix;
