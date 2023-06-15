@@ -24,20 +24,13 @@ body{
     display: flex;
     height: 100px;
     width: 100%;
-    background-image: url(../imagenes/MenuImg.jpg);
     background-position: top;
     background-size: cover;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
 }
 @mixin menuMix{
     display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 @mixin logoMix{
     grid-area: header;
@@ -71,12 +64,16 @@ body{
     "correo correo"
     "footer footer"
 }
+
 .logo{
     @include logoMix;
 }
 .header{
     @include headMix;
+    background-image: url(../imagenes/MenuImg.jpg);
     padding: 10px 40px;
+    justify-content: space-between;
+    align-items: center;
 }
 .logoImg{
     height: 50px;
@@ -85,6 +82,10 @@ body{
 }
 .menu{
     @include menuMix;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 a{
@@ -158,7 +159,7 @@ nav a{
         display: grid;
         font-size: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.3fr 0.2fr;
+        grid-template-rows: 0.4fr 0.6fr 0.8fr 0.3fr 0.2fr;
         grid-template-areas: 
         "header"
         "main"
@@ -170,12 +171,13 @@ nav a{
         @include logoMix;
     }
     .tituloPrincipal{
-        display: none;
+        font-size: small;
     }
     .header{
         @include headMix;
+        background-image: url(../imagenes/darkFondo.jpg);
         flex-direction: column;
-        height: 90px;
+        height: 220px;
     }
     .logoImg{
         height: 30px;
@@ -183,8 +185,9 @@ nav a{
     }
     .menu{
         @include menuMix;
+        flex-direction: column;
+        align-items: center;
     }
-
     a{
         text-decoration: none;
         color: $colorLetras;
@@ -192,13 +195,13 @@ nav a{
     }
     nav a{
         display: flex;
-        padding-right: 2px;
+        padding: 0.4em;
     }
 
     .main{
         grid-area: main;
         @include gridPadding;
-        background-image: url(../imagenes/encabezado.jpg);
+        background-image: url(../imagenes/475264.jpg);
         height: 300px;
         align-items: center;
         color: $colorPincipal;
@@ -206,7 +209,7 @@ nav a{
     .section{
         grid-area: section;
         @include gridPadding;
-        background-image: url(../imagenes/imagen9.jpg);
+        background-image: url(../imagenes/1260061.jpg);
         height: 600px;
         align-items: center;
         color: $colorPincipal;

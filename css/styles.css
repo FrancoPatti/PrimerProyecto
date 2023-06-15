@@ -31,14 +31,14 @@ body {
   display: flex;
   height: 100px;
   width: 100%;
-  background-image: url(../imagenes/MenuImg.jpg);
   background-position: top;
   background-size: cover;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
   top: 0;
+  background-image: url(../imagenes/MenuImg.jpg);
   padding: 10px 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logoImg {
@@ -150,7 +150,7 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.6fr 0.8fr 0.3fr 0.2fr;
+    grid-template-rows: 0.4fr 0.6fr 0.8fr 0.3fr 0.2fr;
     grid-template-areas: "header" "main" "section" "correo" "footer";
   }
   .logo {
@@ -159,22 +159,20 @@ nav a {
     align-items: center;
   }
   .tituloPrincipal {
-    display: none;
+    font-size: small;
   }
   .header {
     grid-area: header;
     display: flex;
     height: 100px;
     width: 100%;
-    background-image: url(../imagenes/MenuImg.jpg);
     background-position: top;
     background-size: cover;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
+    background-image: url(../imagenes/darkFondo.jpg);
     flex-direction: column;
-    height: 90px;
+    height: 220px;
   }
   .logoImg {
     height: 30px;
@@ -182,10 +180,8 @@ nav a {
   }
   .menu {
     display: flex;
-    list-style-type: none;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
   }
   a {
     text-decoration: none;
@@ -194,7 +190,7 @@ nav a {
   }
   nav a {
     display: flex;
-    padding-right: 2px;
+    padding: 0.4em;
   }
   .main {
     grid-area: main;
@@ -204,7 +200,7 @@ nav a {
     background-size: cover;
     text-align: center;
     padding: 20px;
-    background-image: url(../imagenes/encabezado.jpg);
+    background-image: url(../imagenes/475264.jpg);
     height: 300px;
     align-items: center;
     color: url(../imagenes/DarkFondo2.avif);
@@ -217,7 +213,7 @@ nav a {
     background-size: cover;
     text-align: center;
     padding: 20px;
-    background-image: url(../imagenes/imagen9.jpg);
+    background-image: url(../imagenes/1260061.jpg);
     height: 600px;
     align-items: center;
     color: url(../imagenes/DarkFondo2.avif);
