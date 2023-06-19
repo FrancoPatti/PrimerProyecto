@@ -26,7 +26,6 @@ body{
     width: 100%;
     background-position: top;
     background-size: cover;
-    position: fixed;
     top: 0;
 }
 @mixin menuMix{
@@ -74,6 +73,7 @@ body{
     padding: 10px 40px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 .logoImg{
     height: 50px;
@@ -178,6 +178,7 @@ nav a{
         background-image: url(../imagenes/darkFondo.jpg);
         flex-direction: column;
         height: 220px;
+        position: absolute;
     }
     .logoImg{
         height: 30px;

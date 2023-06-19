@@ -84,7 +84,7 @@
         display: grid;
         font-size: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.8fr 0.3fr 0.8fr 0.3fr 0.1fr 0.1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.8fr 0.3fr 0.8fr 0.3fr 0.1fr 0.1fr;
         grid-template-areas: 
         "header"
         "main"
@@ -99,27 +99,26 @@
     
     .produccionImgMain{
         @include produccionImgMainMix;
-        width: 400px;
+        background-size:contain;
         height: 250px;
-        margin: 10px;
     }
     .sectionText{
         @include sectionTextMix;
     }
     .articleImgBanda{
         @include articleImgBandaMix;
-        width: 400px;
+        background-size:contain;
         height: 250px;
-        margin: 10px;
+        width: 335px;
     }
     .articleTextBanda{
         @include articleTextBandaMix;
     }
     .articleImgPremios{
         @include articleImgPremiosMix;
-        width: 400px;
+        background-size:contain;
         height: 250px;
-        margin: 10px;
+        width: 335px;
     }
     .articleTextPremios{
         @include articleTextPremiosMix;

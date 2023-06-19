@@ -9,10 +9,7 @@
 }
 @mixin contactMix{
     grid-area: section;
-    width: 400px;
-    height: 400px;
     background-image: url(../imagenes/darkFondo.jpg);
-    padding: 30px;
     margin: auto;
     border-radius: 4px;
     text-align: center;
@@ -42,6 +39,9 @@
 }
 .contactoSec{
     @include contactMix;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
 }
 .contactoSec h4{
     padding-bottom: 20px
@@ -81,7 +81,7 @@
         display: grid;
         font-size: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.3fr 1fr 0.8fr 0.1fr;
+        grid-template-rows: 0.7fr 0.3fr 1.8fr 0.1fr 0.1fr;
         grid-template-areas: 
         "header"
         "main"
@@ -90,17 +90,18 @@
         "footer"
     }
     .imagenMain{
-        @include imgMainMix;
-        height: 80px;
+        display: none;
     }
     .contactoSec{
         @include contactMix;
+        width: 300px;
+        height: 400px;
+        padding: 20px;
     }
     .imagenArticle{
         @include imgArtMix;
         background-size:contain;
-        height: 300px;
-        margin: 10px;
+        height: 250px;
     }
     .footer{
         grid-area: footer;

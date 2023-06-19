@@ -63,7 +63,7 @@
         display: grid;
         font-size: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.8fr 0.8fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.9fr 0.8fr 0.2fr 0.1fr;
         grid-template-areas: 
         "header"
         "main"
@@ -78,7 +78,6 @@
         background-position: center;
         background-size: contain;
         height: 300px;
-        margin: 10px;
     }
     .repartoSection{
         @include repartSecMix;
@@ -91,6 +90,5 @@
         background-position: center;
         background-size:contain;
         height: 300px;
-        margin: 10px;
     }
 }

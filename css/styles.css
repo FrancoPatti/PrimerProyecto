@@ -33,12 +33,12 @@ body {
   width: 100%;
   background-position: top;
   background-size: cover;
-  position: fixed;
   top: 0;
   background-image: url(../imagenes/MenuImg.jpg);
   padding: 10px 40px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 .logoImg {
@@ -168,11 +168,11 @@ nav a {
     width: 100%;
     background-position: top;
     background-size: cover;
-    position: fixed;
     top: 0;
     background-image: url(../imagenes/darkFondo.jpg);
     flex-direction: column;
     height: 220px;
+    position: absolute;
   }
   .logoImg {
     height: 30px;
@@ -257,13 +257,13 @@ nav a {
 
 .contactoSec {
   grid-area: section;
-  width: 400px;
-  height: 400px;
   background-image: url(../imagenes/darkFondo.jpg);
-  padding: 30px;
   margin: auto;
   border-radius: 4px;
   text-align: center;
+  width: 400px;
+  height: 400px;
+  padding: 30px;
 }
 
 .contactoSec h4 {
@@ -309,26 +309,21 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.3fr 1fr 0.8fr 0.1fr;
+    grid-template-rows: 0.7fr 0.3fr 1.8fr 0.1fr 0.1fr;
     grid-template-areas: "header" "main" "section" "article" "footer";
   }
   .imagenMain {
-    grid-area: main;
-    display: grid;
-    background-image: url(../imagenes/1294177.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 80px;
+    display: none;
   }
   .contactoSec {
     grid-area: section;
-    width: 400px;
-    height: 400px;
     background-image: url(../imagenes/darkFondo.jpg);
-    padding: 30px;
     margin: auto;
     border-radius: 4px;
     text-align: center;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
   }
   .imagenArticle {
     grid-area: article;
@@ -337,8 +332,7 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 300px;
-    margin: 10px;
+    height: 250px;
   }
   .footer {
     grid-area: footer;
@@ -391,7 +385,7 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.8fr 0.8fr 0.5fr 0.1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.9fr 0.8fr 0.2fr 0.1fr;
     grid-template-areas: "header" "main" "section" "article" "article2" "footer";
   }
   .repartoMain {
@@ -404,7 +398,6 @@ nav a {
     background-position: center;
     background-size: contain;
     height: 300px;
-    margin: 10px;
   }
   .repartoSection {
     grid-area: section;
@@ -428,7 +421,6 @@ nav a {
     background-position: center;
     background-size: contain;
     height: 300px;
-    margin: 10px;
   }
 }
 /* MIXINS */
@@ -480,8 +472,8 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.8fr 0.3fr 0.7fr 0.1fr;
-    grid-template-areas: "header " "main" "mainImg" "section" "sectionImg" "correo" "footer";
+    grid-template-rows: 0.3fr 0.9fr 0.1fr 0.7fr 0.1fr 0.2fr 0.1fr;
+    grid-template-areas: "header" "main" "mainImg" "section" "sectionImg" "correo" "footer";
   }
   .arguImgMain {
     grid-area: mainImg;
@@ -490,13 +482,14 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 400px;
-    height: 200px;
-    margin: 10px;
+    height: 270px;
+    width: 335px;
   }
   .arguTextMain {
     grid-area: main;
-    margin: 10px;
+  }
+  .arguTitulo {
+    padding: 10px;
   }
   .arguImgSection {
     grid-area: sectionImg;
@@ -505,13 +498,17 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 400px;
-    height: 250px;
-    margin: 10px;
+    height: 270px;
+    width: 335px;
   }
   .arguSection {
     grid-area: section;
-    margin: 10px;
+    overflow: scroll;
+    height: 750px;
+    width: 335px;
+  }
+  .tempoTitulo {
+    padding: 10px;
   }
 }
 /* MIXINS */
@@ -577,7 +574,7 @@ nav a {
     display: grid;
     font-size: 15px;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.3fr 0.8fr 0.3fr 0.8fr 0.3fr 0.1fr 0.1fr;
+    grid-template-rows: 0.2fr 0.3fr 0.8fr 0.3fr 0.8fr 0.3fr 0.1fr 0.1fr;
     grid-template-areas: "header" "main" "section" "articleImg" "article" "articleImg2" "article2" "correo" "footer";
   }
   .produccionImgMain {
@@ -587,9 +584,8 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 400px;
+    background-size: contain;
     height: 250px;
-    margin: 10px;
   }
   .sectionText {
     grid-area: section;
@@ -602,9 +598,9 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 400px;
+    background-size: contain;
     height: 250px;
-    margin: 10px;
+    width: 335px;
   }
   .articleTextBanda {
     grid-area: article;
@@ -617,9 +613,9 @@ nav a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 400px;
+    background-size: contain;
     height: 250px;
-    margin: 10px;
+    width: 335px;
   }
   .articleTextPremios {
     grid-area: article2;
